@@ -2,8 +2,8 @@
 
 function findMatching(drivers, name){
   let array = [];
-  newArray = drivers.filter(driver=> driver.toLowerCase() == name.toLowerCase());
-  return newArray;
+  array = drivers.filter(driver=> driver.toLowerCase() == name.toLowerCase());
+  return array;
 }
 
 function fuzzyMatch (drivers, name){
