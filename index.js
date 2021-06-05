@@ -7,13 +7,13 @@ function findMatching(drivers, name){
 }
 
 function fuzzyMatch (drivers, name){
-  let newArray = [];
-  newArray = drivers.filter(driver=> name.includes(driver[0]));
-  return newArray;
+  let array = [];
+  array = drivers.filter(driver=> name.includes(driver[0]));
+  return array;
 }
 
 function matchName (drivers, name){
-  let newArray = [];
-  newArray = drivers.filter(driver=> driver.name == name);
-  return newArray;
+  let array = [];
+  array = drivers.filter(driver=> driver.name == name);
+  return array;
 }
