@@ -2,7 +2,7 @@
 
 function findMatching(drivers, name){
   let array = [];
-  array = drivers.filter(driver=> driver.toLowerCase() == name.toLowerCase());
+  array = drivers.filter(driver=> driver.toLowerCase() === name.toLowerCase());
   return array;
 }
 
@@ -14,6 +14,6 @@ function fuzzyMatch (drivers, name){
 
 function matchName (drivers, name){
   let array = [];
-  array = drivers.filter(driver=> driver.name == name);
+  array = drivers.filter(driver=> driver.name === name);
   return array;
 }
