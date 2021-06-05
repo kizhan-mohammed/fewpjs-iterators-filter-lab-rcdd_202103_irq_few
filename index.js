@@ -5,3 +5,10 @@ function findMatching (drivers, name) {
     return driverName.toLowerCase() === name.toLowerCase();
   });
 }
+
+function fuzzyMatch (drivers, partialName) {
+  let lengthOfName = partialName.length;
+  return drivers.filter(function (driverName) {
+    return driverName.slice(0, lengthOfName) === partialName;
+  });
+}
