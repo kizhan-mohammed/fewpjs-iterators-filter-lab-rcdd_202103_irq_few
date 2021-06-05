@@ -1,7 +1,7 @@
 // Code your solution here
 
 function findMatching(drivers, name){
-  let newArray = [];
+  let array = [];
   newArray = drivers.filter(driver=> driver.toLowerCase() == name.toLowerCase());
   return newArray;
 }
